@@ -1,0 +1,9 @@
+cara untuk download tailwind dengan menggunakan command berikut (npm i -D tailwindcss)
+lalu untuk initialisasi (npx tailwindcss init)
+lalu isi perbaiki content pada tailwind.config.js dengan kode ('./public/**/*,{html,js}') public pada kode tergantung dari nama folder
+lalu buat folder baru dengan nama tailwind.css lalu isi dengan kode
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+lalu sebelum terakhir jalankan command berikut (npx tailwindcss -i ./src/input.css -o ./src/output.css --watch) sesuaikan saja nama folder dan file pada setiap antara garing
+cara minify agar ukuran file menjadi lebih kecil (npx tailwindcss -o ./public/style.css --minify)
