@@ -4,15 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="/styles/output.css" rel="stylesheet" />
     <title>Tailwind Starter</title>
+    <!-- <style type="text/css">
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
   </head>
-  <body class="bg-gray-800">
-    <div class="text-center mt-12">
-      <h1 class="text-4xl text-yellow-500 font-bold">Heap Heap Arrayy!</h1>
-      <p class="text-xl text-white mt-4">
-        I have created my first html project using tailwind.
+  <body>
+    <h1 class="font-black text-5xl text-center">
+      belajar menggunakan
+      <span
+        class="bg-gradient-to-br from-gray-700 to-cyan-400 bg-clip-text text-transparent"
+        >TailwindCSS</span
+      >
+    </h1>
+    <section class="my-8 bg-orange-400">
+      <h2>spacing</h2>
+      <div class="mx-7 bg-yellow-700">margin</div>
+      <!--*  margin punya nilai minus dan auto  -->
+      <div class="py-5 bg-neutral-800 text-white">padding</div>
+      <!-- * tidak ada auto dan minus -->
+    </section>
+
+    <section class="bg-lime-500 mb-2">
+      <!--* width dan hight bisa dengan menggunakan persentasi seperti 1/2 -->
+      <h2 class="w-1/2 bg-slate-500">sizing</h2>
+      <div class="w-14 h-14 bg-red-300">kotak1</div>
+    </section>
+
+    <section
+      class="p-36 bg-gradient-to-r from-lime-300 via-slate-200 to-sky-300 my-8"
+    >
+      <div class="text-center">coba gradasi warna</div>
+    </section>
+
+    <!-- tambahkan jenis font atau kostumisasi di tailwind.config -->
+    <section class="mb-96 font-Geist">
+      <h2 class="mb-3 mx-3 font-extrabold text-5xl text-center">
+        belajar typhographi pada tailwindcss
+      </h2>
+      <div class="mb-2 mx-3 font-thin text-sm text-center">
+        by:
+        <a href="#" class="font-light hover:text-blue-600 underline">
+          farhan alwanda</a
+        >
+      </div>
+      <p class="mb-5 mx-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+        assumenda modi maxime corporis mollitia quam, voluptate, laudantium
+        laboriosam consectetur possimus exercitationem reprehenderit sapiente
+        repellat excepturi tempora delectus tempore? Atque, quo.
       </p>
-    </div>
+      <p class="mb-5 mx-3 font-extralight">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nemo
+        ipsam quos itaque natus placeat magni dolorum neque vel possimus laborum
+        architecto velit nulla ad sunt laboriosam, officia molestiae ut quo!
+        Provident atque maiores inventore nisi numquam consequuntur quidem!
+        Nesciunt rerum iure iste vero a eius, odit laudantium earum cumque!
+      </p>
+      <p class="mb-5 mx-3">
+        Lorem ipsum dolor sit amet,
+        <a href="#" class="text-blue-600 italic hover:not-italic">
+          consectetur adipisicing elit.</a
+        >
+        Eligendi libero quasi esse hic, debitis qui amet doloribus distinctio
+        eius excepturi dolorem veritatis, adipisci explicabo laboriosam in magni
+        inventore laudantium dolor.
+      </p>
+    </section>
   </body>
 </html>
