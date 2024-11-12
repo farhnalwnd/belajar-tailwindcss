@@ -7,3 +7,4 @@ lalu buat folder baru dengan nama tailwind.css lalu isi dengan kode
     @tailwind utilities;
 lalu sebelum terakhir jalankan command berikut (npx tailwindcss -i ./src/input.css -o ./src/output.css --watch) sesuaikan saja nama folder dan file pada setiap antara garing
 cara minify agar ukuran file menjadi lebih kecil (npx tailwindcss -o ./public/style.css --minify)
+peer digunakan untuk mengaitkan antara sibling, sedangkan group untuk menghbungkan dengan parent

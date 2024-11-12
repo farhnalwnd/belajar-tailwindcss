@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles/output.css" rel="stylesheet" />
     <title>psuedo dan dark mode</title>
+    <style type="text/css">
+      #toggle:checked ~ label div.toggle-circle {
+        transform: translateX(19px);
+      }
+    </style>
   </head>
-  <body>
+  <body class="dark:bg-slate-700 dark:text-slate-100">
     <button
-      class="w-36 bg-orange-400 p-2 block mt-2 rounded-full mx-auto hover:bg-orange-600 active:bg-orange-300 focus:bg-orange-100 focus:ring focus:ring-orange-200"
+      class="w-36 bg-orange-400 p-2 block mt-2 rounded-full mx-auto hover:bg-orange-600 active:bg-orange-300 focus:bg-orange-100 focus:ring focus:ring-orange-200 dark:bg-green-600 dark:hover:bg-green-400 dark:active:text-black dark:active:bg-green-100 dark:focus:ring-zinc-100 dark:focus:shadow-md dark:focus:shadow-green-200 dark:focus:bg-green-700"
     >
       Submit
     </button>
     <div
-      class="py-4 px-6 max-w-xl border-slate-200 mt-6 mx-auto shadow-md shadow-slate-500 bg-slate-100 font-Geist group hover:bg-blue-300 rounded-md"
+      class="py-4 px-6 max-w-xl mt-6 mx-auto shadow-md shadow-slate-500 font-Geist hover:bg-blue-300 rounded-md my-5 dark:hover:bg-green-600 group"
     >
       <h5
-        class="text-lg font-semibold text-neutral-600 mb-2 group-hover:text-white"
+        class="text-lg font-semibold mb-2 group-hover:text-white dark:group-hover:text-black"
       >
         farhan alwanda
       </h5>
       <p
-        class="group-hover:text-white selection:bg-slate-800 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-orange-950 first-letter:mr-2 first-letter:float-left"
+        class="group-hover:text-white selection:bg-slate-800 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-2 first-letter:float-left dark:group-hover:text-black"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
         commodi cum a quaerat odit odio rem aut quasi, neque iusto non tempore
@@ -31,5 +36,69 @@
         obcaecati?
       </p>
     </div>
+    <div
+      class="p-5 max-w-xl shadow-md shadow-slate-400 mx-auto font-serif rounded-xl"
+    >
+      <form action="">
+        <label for="username">
+          <span class="pl-2 font-semibold text-sm">username</span>
+          <input
+            type="text"
+            id="username"
+            placeholder="masukan username kamu ...."
+            class="pl-3 py-[6px] mt-1 w-full block rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-1 focus:border-green-600 focus:ring-green-600 invalid:text-red-600 invalid:focus:ring-red-400 invalid:focus:border-red-400 peer"
+          />
+          <p
+            class="text-xs ml-1.5 my-1 text-red-500 invisible peer-invalid:visible"
+          >
+            * username tidak valid
+          </p>
+        </label>
+        <label for="username">
+          <span class="pl-2 font-semibold text-sm">username</span>
+          <input
+            type="email"
+            id="username"
+            placeholder="masukan email kamu ...."
+            class="pl-3 py-[6px] mt-1 w-full block rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-1 focus:border-green-600 focus:ring-green-600 invalid:text-red-600 invalid:focus:ring-red-400 invalid:focus:border-red-400 peer"
+          />
+          <p
+            class="text-xs ml-1.5 my-1 text-red-500 invisible peer-invalid:visible"
+          >
+            * email tidak valid
+          </p>
+        </label>
+      </form>
+    </div>
+    <div class="mt-16 mr-[90px] flex justify-end">
+      <span class="mr-1.5">light</span>
+      <input type="checkbox" id="toggle" class="hidden" />
+      <label for="toggle">
+        <div
+          class="w-9 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer"
+        >
+          <div
+            class="p-1.5 w-4 h-4 bg-slate-50 rounded-full toggle-circle"
+          ></div>
+        </div>
+      </label>
+      <span class="ml-1.5">night</span>
+    </div>
+    <div class="mb-40"></div>
+    <script>
+      const checkbox = document.querySelector("#toggle");
+      const html = document.querySelector("html");
+
+      checkbox.addEventListener("click", function () {
+        checkbox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+        //if (this.checked) {
+        //  html.classList.add("dark");
+        //} else {
+        //  html.classList.remove("dark");
+        //}
+      });
+    </script>
   </body>
 </html>
