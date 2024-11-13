@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- todo gunakan scroll-smooth agar ketika element yang merngarahkan ke top dapat pindah ke top page dengan transisi -->
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/output.css" />
+    <title>layouting</title>
+  </head>
+  <body>
+    <div class="container p-5 mx-auto mt-24">
+      <!-- todo gunakan relative pada div pembungkus dan absolute untuk div yang dibungkus agar div yang dibungkus keluar dari flow dari div pembungkus -->
+      <!-- div pembungkus -->
+      <div class="border rounded-md shadow-md p-10 relative">
+        <!-- div yang dibungkus -->
+        <!-- todo gunakan left-1/2 dan -translate-x-1/2 agar item yang dibungkus oleh relative dapat berada ditengah page-->
+        <div
+          class="w-6 h-6 rounded-full bg-slate-400 m-2 flex absolute -top-5 left-1/2 -translate-x-1/2"
+        >
+          <a href="#" class="text-xs m-auto">❌</a>
+        </div>
+        <!-- element top  -->
+        <!-- todo fixed digunakan agar suatu element tetap ada dibagian display dan tidak akan bergeser  -->
+        <div
+          class="w-8 h-8 rounded-full bg-sky-400 fixed bottom-5 right-5 opacity-50 flex"
+        >
+          <a href="#" class="m-auto text-xl">🔝</a>
+        </div>
+        <img
+          src="/img/radja.jpg"
+          alt="radja"
+          width="200px"
+          class="float-start mr-4"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo
+          omnis nulla dolores laboriosam vel exercitationem, soluta pariatur
+          enim sequi maiores facilis nemo incidunt at minus odit! Quisquam quas
+          labore dolore alias! Facilis mollitia, voluptatum quasi quo corrupti
+          voluptas tempore minus, praesentium perferendis veritatis facere?
+          Explicabo nemo voluptatibus aliquam! Earum suscipit error, quas
+          repellat voluptate corrupti magni voluptatibus accusantium explicabo
+          similique, doloribus ducimus facilis aperiam quae id? Quos rem
+          aspernatur dolore repellendus perspiciatis consequuntur ea iste maxime
+          numquam nulla incidunt blanditiis, consequatur delectus ipsum culpa.
+          Sit dolorem non accusamus quisquam nesciunt voluptates, optio nostrum
+          exercitationem esse excepturi voluptas eum, laudantium suscipit facere
+          quidem enim necessitatibus doloribus! Suscipit doloremque voluptates
+          quod recusandae veritatis omnis deserunt accusamus natus, sunt
+          obcaecati eaque aspernatur voluptatibus possimus sapiente, praesentium
+          numquam cum, optio minima atque ipsa earum totam reprehenderit at?
+          Iure, officia! Obcaecati earum commodi dolorum exercitationem
+          consequuntur! Eligendi dolor laborum numquam, esse debitis molestias
+          fugiat inventore id, corporis explicabo temporibus tempora dolores
+          ducimus non autem, est sunt voluptas quos expedita! Minus explicabo
+          eveniet facere accusantium ullam provident exercitationem deleniti
+          dolorem culpa minima tempore, quis quidem necessitatibus officiis
+          temporibus dicta accusamus sed, voluptate neque voluptas! Excepturi,
+          dignissimos voluptatibus ducimus ipsam ratione dolorem praesentium
+          dolore placeat qui saepe odit eos ipsa eius repellat laudantium
+          cupiditate commodi explicabo. In labore totam eligendi dolorum
+          deleniti, explicabo modi veniam blanditiis nulla soluta aliquam eaque
+          alias, numquam officiis? Incidunt cum ut beatae eveniet debitis
+          tempore excepturi delectus nobis facere pariatur assumenda quas
+          accusantium possimus voluptates ipsum nostrum quasi itaque aperiam
+          deleniti, maxime laborum? Ea perferendis libero veniam omnis aut velit
+          debitis magni, hic vitae amet possimus magnam voluptates ut dolores
+          error modi animi pariatur harum in non beatae perspiciatis, incidunt
+          necessitatibus. Tempora tenetur cumque iste et laboriosam deleniti
+          assumenda suscipit itaque eaque animi. Ipsum mollitia aspernatur minus
+          placeat, molestias aperiam deserunt repudiandae officia tempora fugit
+          pariatur corrupti? A soluta cupiditate velit incidunt rerum id
+          consectetur exercitationem. At sapiente, dolor quas consequuntur sint
+          in ex aspernatur. Nam sequi sunt distinctio error modi rerum eaque
+          fugit necessitatibus eius, consectetur consequatur dolores suscipit
+          vitae fugiat quaerat, doloribus ullam non similique? Fuga alias porro,
+          quas totam voluptas deleniti rerum modi nihil odio id sit molestias
+          omnis. Dolores quia ipsum repellat eligendi, veritatis, adipisci vitae
+          saepe et aut, doloremque nesciunt eum! Impedit, fugiat. Aspernatur
+          dignissimos libero quisquam pariatur? Cum odio ipsam voluptate,
+          excepturi dignissimos quidem. Inventore repellat optio ratione qui
+          quas officiis temporibus velit soluta, dolorem quod alias fuga animi
+          dolor est ut voluptates ullam vero perspiciatis nostrum consectetur
+          commodi beatae! Distinctio omnis temporibus, repudiandae vero itaque,
+          libero facere eum rem, atque autem pariatur eaque eveniet quibusdam
+          beatae adipisci nulla animi illo odit placeat ab? Velit quae rerum
+          minima delectus quas blanditiis, officiis quam exercitationem
+          accusantium architecto, maxime in repellat ut. Repellendus eum
+          suscipit, eveniet fugit saepe ducimus aliquid fuga sed hic quos
+          voluptatum dolores, laboriosam ullam in, adipisci minima. Facere natus
+          doloribus iusto iste, odit neque ex repellat, deserunt quisquam dicta
+          perspiciatis nemo quia est ut ducimus mollitia enim fugiat, sed
+          accusantium dignissimos! Voluptas, earum?
+        </p>
+      </div>
+      <div class="border rounded-md shadow-md p-10 my-10 gap-4 columns-4">
+        <img src="/img/images.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/radja.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/radja.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/images.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/images.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/radja.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/radja.jpg" alt="image" class="w-full mb-4" />
+        <img src="/img/images.jpg" alt="image" class="w-full mb-4" />
+      </div>
+    </div>
+  </body>
+</html>
