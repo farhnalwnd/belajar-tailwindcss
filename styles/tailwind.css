@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer utilities {
+  grid-card {
+  }
+}
